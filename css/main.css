@@ -1,17 +1,31 @@
+@font-face {
+  font-family: brownLight;
+  src: url('../fonts/Brown-Light.otf');
+}
+
+@font-face {
+  font-family: brownRegular;
+  src: url('../fonts/Brown-Regular.otf');
+}
+
+@font-face {
+  font-family: brownThin;
+  src: url('../fonts/Brown-Thin.otf');
+}
+
 body {
-    background-color: #1d1d1d;
+    background-color: white;
 }
 
 #menu {
     background-color: #1d1d1d;
     color: #ffffff;
-    border-style: dashed;
-    border-width: 1px;
     width: 100%;
     height: 54px;
 }
 
 .menu-nav {
+    font-family: brownLight;
     height: 54px;
     width: 750px;
     margin: auto;
@@ -48,20 +62,67 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: #333232;
   }
 
   /* Presentación Personal */
   #modal {
       width: 100%;
       height: 600px;
-      border-color: #ffffff;
-      border-style: dashed;
-      border-width: 1px;
+      background-image: url('../images/coding-photo.jpeg');
   }
 
-.name-position {
-    height: 25%;
+.image-transparency {
+    height: 100%;
     width: 100%;
-    border: 1px white dashed;
+    background-color: rgb(29, 29, 29, 0.55)
+  }
+
+  .name-position {
+    height: 40%;
+    width: 100%;
+  }
+  .name-wraper {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    color: white;
+  }
+
+  /* About Page */
+
+  #about {
+    width: 100%;
+    height: 300px;
+    background-color: #1d1d1d;
+    font-family: brownLight;
+  }
+
+  .about-position{
+    height: 20%;
+    width: 100%;
+  }
+
+  .about-left{
+    width: 30%;
+    height: 80%;
+    color: white;
+    text-align: center;
+    float: left;
+  }
+
+  .about-center{
+    width: 40%;
+    height: 80%;
+    color: white;
+    text-align: justify;
+    float: left;
+  }
+
+  .about-right{
+    width: 200px;
+    height: 80%;
+    color: white;
+    text-align: center;
+    float: left;
   }
